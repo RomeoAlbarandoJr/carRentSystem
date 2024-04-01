@@ -167,6 +167,11 @@ public class loginForm extends javax.swing.JFrame {
 
         jButton3.setFont(new java.awt.Font("Tahoma", 1, 10)); // NOI18N
         jButton3.setText("Register");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel4.add(jButton3);
         jButton3.setBounds(150, 310, 75, 21);
 
@@ -254,6 +259,13 @@ public class loginForm extends javax.swing.JFrame {
             passInput.setEchoChar('*');
         }
     }//GEN-LAST:event_showPasswordActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+        registrationForm reg = new registrationForm();
+        reg.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
